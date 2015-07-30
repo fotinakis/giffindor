@@ -35,11 +35,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img.framed {
-  border-image: image-url('frame.png') 93 92 87 92 stretch stretch; 
-  border-color: #f4be52; 
-  border-style: inset; 
-  border-width: 60px; 
-  background-color: #ffe; 
+  border-image: image-url('frame.png') 93 92 87 92 stretch stretch;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 60px;
+  background-color: #ffe;
+}
+
+.btn-success {
+  background-color: red;
 }
 
 #share-section {
