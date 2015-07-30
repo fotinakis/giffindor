@@ -5,4 +5,5 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 before_script:
   - "bundle exec rake db:create db:migrate"
+  - "env | grep TRAVIS"
 script: xvfb-run -a bundle exec rspec

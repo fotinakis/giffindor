@@ -1,5 +1,5 @@
 $maroon: #b81e1c;
-$gold: #fab303;
+$gold: #fab301;
 
 @mixin diagonal_lines_pattern($color1, $color2) {
   background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, $color1), color-stop(0.25, $color2), color-stop(0.25, $color1), color-stop(0.5, $color1), color-stop(0.5, $color2), color-stop(0.75, $color2), color-stop(0.75, $color1));
