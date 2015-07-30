@@ -44,7 +44,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
-  gem 'percy-capybara', path: '~/src/percy-capybara'
+  gem 'percy-capybara'
 end
 
 gem "devise"
