@@ -41,6 +41,10 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'capybara'
   gem 'capybara-webkit'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'selenium-webdriver'
+  gem 'percy-capybara', path: '~/src/percy-capybara'
 end
 
 gem "devise"
