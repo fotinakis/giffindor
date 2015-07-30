@@ -8,6 +8,6 @@ FactoryGirl.define do
 
   factory :gif_post do
     association :user
-    body 'test'
+    body 'fancy gif'
   end
 end
