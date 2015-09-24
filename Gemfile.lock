@@ -101,7 +101,6 @@ GEM
     jquery-ui-rails (4.2.0)
       railties (>= 3.2.16)
     json (1.8.3)
-    libv8 (3.16.14.11)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -138,7 +137,6 @@ GEM
     rake (10.4.2)
     rdoc (4.1.1)
       json (~> 1.4)
-    ref (2.0.0)
     rspec-core (3.2.3)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.1)
@@ -181,9 +179,6 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     sqlite3 (1.3.9)
-    therubyracer (0.12.2)
-      libv8 (~> 3.16.14.0)
-      ref
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -229,7 +224,6 @@ DEPENDENCIES
   sdoc
   selenium-webdriver
   sqlite3
-  therubyracer
   thin
   uglifier (>= 1.3.0)
 
