@@ -2,7 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=IM+Fell+Great+Primer:400,400italic);
 
 body {
-  background-color: #f8fbf2;
+  background-color: #f8fbf1;
 }
 body, h1, h2, h3, h4, h5, h6, p, a {
   font-family: 'IM Fell Great Primer', serif;
@@ -35,11 +35,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img.framed {
-  border-image: image-url('frame.png') 93 92 87 92 stretch stretch; 
-  border-color: #f4be52; 
-  border-style: inset; 
-  border-width: 60px; 
-  background-color: #ffe; 
+  border-image: image-url('frame.png') 93 92 87 92 stretch stretch;
+  border-color: #f4be52;
+  border-style: inset;
+  border-width: 60px;
+  background-color: #ffe;
 }
 
 #share-section {
