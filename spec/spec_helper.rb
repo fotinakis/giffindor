@@ -1,6 +1,7 @@
 require 'capybara/rspec'
 require 'capybara-webkit'
 require 'factory_girl_rails'
+require 'percy/capybara/rspec'
 
 # Capybara config.
 Capybara.javascript_driver = :webkit
@@ -37,6 +38,5 @@ RSpec.configure do |config|
     config.before(:suite) do
       Percy.config.access_token = ENV['PERCY_TOKEN']
     end
-    config.after(:suite) { Percy::Capybara.finalize_build }
   end
 end
