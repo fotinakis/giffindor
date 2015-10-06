@@ -5,4 +5,7 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 before_script:
   - "bundle exec rake db:create db:migrate"
-script: xvfb-run -a bundle exec rspec
+  - "bundle exec rake parallel:create[2] parallel:prepare[2]"
+  - "export PERCY_PARALLEL_NONCE=`date +%s`"
+  - "export PERCY_PARALLEL_TOTAL=2"
+script: 'xvfb-run -a bundle exec rake parallel:spec[2]'

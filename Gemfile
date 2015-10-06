@@ -44,7 +44,10 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'selenium-webdriver'
-  gem 'percy-capybara'
+  gem 'percy-capybara', git: 'https://github.com/percy/percy-capybara.git'
+  gem 'percy-client', git: 'https://github.com/percy/percy-client.git'
+
+  gem 'parallel_tests'
 end
 
 gem "devise"

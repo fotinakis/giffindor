@@ -5,7 +5,7 @@ require File.expand_path('../../config/environment', __FILE__)
 require 'rspec/rails'
 # Add additional requires below this line. Rails is not loaded until this point!
 
-ActiveRecord::Migration.check_pending!
+# ActiveRecord::Migration.check_pending!
 
 include Warden::Test::Helpers
 Warden.test_mode!
@@ -15,3 +15,4 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = false
   config.infer_spec_type_from_file_location!
 end
+
