@@ -12,7 +12,5 @@ RSpec.feature :second, js: true do
     visit '/'
     expect(page).to have_content('Recently Shared Gifs')
     expect(page).to have_content('test-user')
-
-    Percy::Capybara.snapshot(page, name: 'homepage from parallel')
   end
 end

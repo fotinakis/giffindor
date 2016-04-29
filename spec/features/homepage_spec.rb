@@ -17,8 +17,6 @@ RSpec.feature :homepage, js: true do
     visit '/'
     expect(page).to have_content('Recently Shared Gifs')
     expect(page).to have_content('test-user')
-
-    Percy::Capybara.snapshot(page, name: 'homepage')
   end
 
   scenario 'user clicks Submit A Gif and input section appears' do
@@ -28,8 +26,6 @@ RSpec.feature :homepage, js: true do
 
     find('#toggle-post-dialog').click
     expect(page).to have_content('Share a gif')
-
-    Percy::Capybara.snapshot(page, name: 'homepage with input')
   end
 
   scenario 'user tries to submit a PNG and gets an error' do
@@ -42,7 +38,5 @@ RSpec.feature :homepage, js: true do
 
     fill_in 'new-gif-post', with: jumping_kitten_url
     expect(page).to have_content('There is no valid gif link in this post')
-
-    Percy::Capybara.snapshot(page, name: 'homepage with input and error')
   end
 end
