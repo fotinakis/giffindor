@@ -1,7 +1,6 @@
 require 'capybara/rspec'
 require 'capybara-webkit'
 require 'factory_girl_rails'
-require 'percy/capybara/rspec'
 
 # Capybara config.
 Capybara.javascript_driver = :webkit
@@ -32,6 +31,9 @@ RSpec.configure do |config|
   config.after(:each) do
     DatabaseCleaner.clean
   end
+
+  config.before(:suite) { Percy::Capybara.initialize_build }
+  config.after(:suite) { Percy::Capybara.finalize_build }
 
   # Percy config.
   RSpec.configure do |config|
