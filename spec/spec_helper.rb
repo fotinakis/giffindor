@@ -3,7 +3,7 @@ require 'capybara-webkit'
 require 'factory_girl_rails'
 
 # Capybara config.
-Capybara.javascript_driver = :webkit
+# Capybara.javascript_driver = :webkit
 Capybara::Webkit.configure do |config|
   config.allow_unknown_urls
 end
