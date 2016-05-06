@@ -1,6 +1,6 @@
 RSpec.feature :second, js: true do
-  let(:jumping_kitten_url) { 'http://cdn.shopify.com/s/files/1/0645/5501/files/kitty-cat-jumping_large.png?449' }
-  let(:gif_image_url) { 'https://media.giphy.com/media/ardMfW1w53UvC/giphy.gif' }
+  let(:jumping_kitten_url) { '/kitty-cat-jumping_large.png' }
+  let(:gif_image_url) { '/duckhunt.gif' }
   before(:each) do
     user = create(:user)
     create(:gif_post, body: 'jumping kitten', user: user, url: jumping_kitten_url)
